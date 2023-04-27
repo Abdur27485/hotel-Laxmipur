@@ -3,3 +3,18 @@
   height: 100px;
   transform: rotate(-15deg);
 }
+.hero{
+  background-image: url('/public/hero\ background.jpg');
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bg-hero{
+  background-color: rgba(0, 0, 0, 0.334);
+  height: 100vh;
+  text-shadow: 4px 5px 0px slateblue;
+}
+.bg-hero h1{
+  font-size: 80px;
+  margin-bottom: 32px;
+}
