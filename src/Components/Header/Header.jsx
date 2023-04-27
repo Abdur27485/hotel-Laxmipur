@@ -1,9 +1,24 @@
 import React from 'react';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 const Header = () => {
     return (
-        <div>
-            <h2>This is Header</h2>
+        <div className='position-absolute w-100'>
+            <Navbar className='bg-transparent' expand="lg">
+                <Container>
+                    <Navbar.Brand href="#home">
+                        <img className='site-logo' src="/public/site logo.png" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto fw-bold">
+                            <Nav.Link className='text-white' href="#home">Home</Nav.Link>
+                            <Nav.Link className='text-white' href="#link">Login</Nav.Link>
+                            <Nav.Link className='text-white' href="#link">Book</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </div>
     );
 };
