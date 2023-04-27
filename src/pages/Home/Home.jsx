@@ -1,11 +1,12 @@
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
+import Bookings from '../../Components/Bookings/Bookings';
 
 const Home = () => {
     return (
         <div>
             <Hero></Hero>
-            <h2>This Is Home</h2>
+            <Bookings></Bookings>
         </div>
     );
 };
