@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Main from './layout/Main.jsx'
 import Home from './pages/Home/Home.jsx'
 import AuthProvider from './Components/AuthProvider/AuthProvider.jsx'
+import CheckOut from './Components/CheckOut/CheckOut.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,9 +16,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>
-      }
+      },
     ]
-  }
+  },
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

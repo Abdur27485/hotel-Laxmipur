@@ -1,7 +1,9 @@
 import React from 'react';
 import { Button, Card, CardImg } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 
 const Bookings = () => {
+    const location = useLocation();
     return (
         <div className='mb-5 container'>
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -18,7 +20,7 @@ const Bookings = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className="border-0 bg-white">
-                    <Button variant="primary">BOOK</Button>
+                    <Button variant="primary"><Link state={location} to='/checkout'>BOOK</Link></Button>
                     </Card.Footer>
                 </Card>
                 </div>
@@ -36,7 +38,7 @@ const Bookings = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className="border-0 bg-white">
-                    <Button variant="primary">BOOK</Button>
+                    <Button variant="primary"><Link to='/checkout'>BOOK</Link></Button>
                     </Card.Footer>
                 </Card>
                 </div>
@@ -54,7 +56,7 @@ const Bookings = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer className="border-0 bg-white">
-                    <Button variant="primary">BOOK</Button>
+                    <Button variant="primary"><Link to='/checkout'>BOOK</Link></Button>
                     </Card.Footer>
                 </Card>
                 </div>

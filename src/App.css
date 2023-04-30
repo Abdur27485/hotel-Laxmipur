@@ -18,3 +18,8 @@
   font-size: 80px;
   margin-bottom: 32px;
 }
+
+/* customizing bootstrap css  */
+.modal{
+  padding-right: 0px !important;
+}
